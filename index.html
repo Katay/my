@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="" />
+  <title>Home</title>
+
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="jquery.js" ></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+		$('.menu a').bind("click", function(e){
+			   var anchor = $(this);
+			   var hh = 30; //header height
+			   $('html, body').stop().animate({
+				   scrollTop: $(anchor.attr('href')).offset().top - hh + 'px'
+			   }, 750);
+	   e.preventDefault();
+		});
+		
+		$('.menu').find('a').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+		});
+		
+		$('.dark_strelka').click(function(){
+			$('.all').toggleClass('close');
+		});
+	});
+</script>
+
+</head>
+<body>
+<div class="all">
+	<div class="right_side">
+		<div class="right_side_inn">
+			<div class="surname">Чайка</div>
+			<div class="name">Екатерина</div>
+			<div class="verstka">html/scc верстальщик</div>
+			<div class="menu pr">
+				<a href="#con" >Что такое верстка</a>
+				<a href="#con2">Портфолио</a>
+				<a href="#con3">Технические тонкости</a>
+				<a href="#con4">Обо мне</a>
+			</div>
+			<div class="dark_strelka"></div>
+		</div>
+	</div>
+	<div class="left_side">	
+		<div class="content">
+			<div class="con" id="con">
+				<h1>Что такое верстка</h1>
+				<p><strong>HTML</strong> <span>(от англ. HyperText Markup Language — «язык гипертекстовой разметки»;)</span> — стандартный язык разметки документов во Всемирной паутине.</p>
+				<p>Вестка сайта -  создание с помощью языков, понятными браузерами разметки html и касскадных таблиц css страницы по готовому дизайну.</p>
+				<h4>Верстка с учетом кроссбраузерности</h4>
+				<p>На сегодняшний день есть ряд самых популярных браузеров (Internet Explore, Opera, Mozilla Firefox, Google Chrome, Safari...). Все они имеют разные версии и при неправильной верстке или без учета специфики того или иного браузера, одна и та же страница html может выглядеть по разному. </p>
+			</div>
+			<div class="portfolio con2" id="con2">
+				<h1>Портфолио</h1>
+				<p>Главное портфолио верстальщика, это его сайт-портфолио!</p>
+				<h4>Здесь представлены некоторые понравившиеся работы сделаные в пределе 2010 - 2013 годов.</h4>
+				<a target="blunck" href="http://electrade.ru/"><img src="images/img-site-little-2.png" /></a>
+				<a target="blunck" href="http://www.axius-auto.ru/"><img src="images/img-site-little-6.png" /></a>
+				<a target="blunck" href="http://plastikaokna.ru/"><img src="images/img-site-little-8.png" /></a>
+				<a target="blunck" href="http://prohygiene.ru/"><img src="images/img-site-little-11.png" /></a>
+				<a target="blunck" href="http://exterier.ru/"><img src="images/img-site-little-12.png" /></a>
+				<a target="blunck" href="http://uslugiiceny.ru/"><img src="images/img-site-little-17.png" /></a>
+				<a target="blunck" href="http://flathostel.ru/"><img src="images/img-site-little-19.png" /></a>
+				<a target="blunck" href="http://www.liebherr-kran.ru/"><img src="images/img-site-little-21.png" /></a>
+				<a target="blunck" href="http://www.kurs-ege.ru/"><img src="images/img-site-little-24.png" /></a>
+				<a target="blunck" href="http://www.maxdoors.ru/"><img src="images/img-site-little-26.png" /></a>
+				<a target="blunck" href="http://ob-yom.ru/"><img src="images/img-site-little-28.png" /></a>
+				<a target="blunck" href="http://monolit-mr.ru/"><img src="images/img-site-little-29.png" /></a>
+				<a target="blunck" href="http://lunet.ru/"><img src="images/img-site-little-30.png" /></a>
+				<a target="blunck" href="http://kupitvigodno.ru/"><img src="images/img-site-little-31.png" /></a>
+				<a target="blunck" href="http://www.ploscostopie.aweb.bget.ru/"><img src="images/img-site-little-32.png" /></a>
+				<a target="blunck" href="http://tachkilestnici.ru/"><img src="images/img-site-little-33.png" /></a>
+				<a target="blunck" href="http://www.b-fc.ru/"><img src="images/img-site-little-34.png" /></a>
+				<a target="blunck" href="http://fascom-m.ru/"><img src="images/img-site-little-35.png" /></a>
+			</div>
+			<div class="con3 lipsum" id="con3">
+				<h1>Технические тонкости</h1>				
+			</div>
+			<div class="con3" id="con4">
+				<h1>Обо мне</h1>
+				<img class="me" src="images/wb.jpg" />
+				<div class="me_kontaks">
+					<h4>Вы можете связатся со мной:</h4>
+					<p><span><b>Skype:</b></span> <span>varakarma</span></p>
+					<p><span><b>Email:</b></span><span> <a href="mailto:gabbeano@gmail.com">gabbeano@gmail.com</a></span></p>
+				</div>
+			</div>				
+		</div>	
+	</div>
+</div>
+</body>  
+</html>
