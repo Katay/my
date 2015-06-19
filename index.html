@@ -3,31 +3,8 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="generator" content="" />
-  <title>Home</title>
-
+  <title>Portfolio</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="jquery.js" ></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($){
-		$('.menu a').bind("click", function(e){
-			   var anchor = $(this);
-			   var hh = 30; //header height
-			   $('html, body').stop().animate({
-				   scrollTop: $(anchor.attr('href')).offset().top - hh + 'px'
-			   }, 750);
-	   e.preventDefault();
-		});
-		
-		$('.menu').find('a').click(function(){
-			$(this).addClass('active').siblings().removeClass('active');
-		});
-		
-		$('.dark_strelka').click(function(){
-			$('.all').toggleClass('close');
-		});
-	});
-</script>
-
 </head>
 <body>
 <div class="all">
@@ -53,11 +30,15 @@
 				<p>Вестка сайта -  создание с помощью языков, понятными браузерами разметки html и касскадных таблиц css страницы по готовому дизайну.</p>
 				<h4>Верстка с учетом кроссбраузерности</h4>
 				<p>На сегодняшний день есть ряд самых популярных браузеров (Internet Explore, Opera, Mozilla Firefox, Google Chrome, Safari...). Все они имеют разные версии и при неправильной верстке или без учета специфики того или иного браузера, одна и та же страница html может выглядеть по разному. </p>
+
+
+				Занимюсь версткой более 3-х лет 
+
+
 			</div>
 			<div class="portfolio con2" id="con2">
 				<h1>Портфолио</h1>
-				<p>Главное портфолио верстальщика, это его сайт-портфолио!</p>
-				<h4>Здесь представлены некоторые понравившиеся работы сделаные в пределе 2010 - 2013 годов.</h4>
+				<h4>Здесь представлены некоторые работы сделаные в 2010 - 2013 годов.</h4>
 				<a target="blunck" href="http://electrade.ru/"><img src="images/img-site-little-2.png" /></a>
 				<a target="blunck" href="http://www.axius-auto.ru/"><img src="images/img-site-little-6.png" /></a>
 				<a target="blunck" href="http://plastikaokna.ru/"><img src="images/img-site-little-8.png" /></a>
@@ -92,5 +73,7 @@
 		</div>	
 	</div>
 </div>
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/main.js" ></script>
 </body>  
 </html>
